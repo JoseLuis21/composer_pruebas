@@ -1,1 +1,1 @@
-"# composer_pruebas" 
+Uso de componentes de laravel sin laravel 
