@@ -1,7 +1,7 @@
 <?php
 //Importamos el archivo autoload.php presente en nuestro directorio vendor require 'vendor/autoload.php';
 //Después importamos la clase Capsule escribiendo su ruta completa incluyendo el namespace
-require '../vendor/autoload.php';
+require 'vendor/autoload.php';
 use Illuminate\Database\Capsule\Manager as Capsule;
 //Creamos un nuevo objeto de tipo Capsule
 $capsule = new Capsule;

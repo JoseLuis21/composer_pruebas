@@ -10,6 +10,8 @@
         }
     ],
     "require": {
-         "illuminate/database": "*"
+         "illuminate/database": "*",
+         "illuminate/routing" : "4.1.*",
+         "illuminate/events" : "4.1.*"
     }
 }

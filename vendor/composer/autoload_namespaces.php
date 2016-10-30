@@ -6,5 +6,20 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Doctrine\\Common\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib'),
+    'Symfony\\Component\\Security\\Core\\' => array($vendorDir . '/symfony/security-core'),
+    'Symfony\\Component\\Routing\\' => array($vendorDir . '/symfony/routing'),
+    'Symfony\\Component\\HttpKernel\\' => array($vendorDir . '/symfony/http-kernel'),
+    'Symfony\\Component\\HttpFoundation\\' => array($vendorDir . '/symfony/http-foundation'),
+    'Symfony\\Component\\Finder\\' => array($vendorDir . '/symfony/finder'),
+    'Symfony\\Component\\Debug\\' => array($vendorDir . '/symfony/debug'),
+    'Illuminate\\Support' => array($vendorDir . '/illuminate/support'),
+    'Illuminate\\Session' => array($vendorDir . '/illuminate/session'),
+    'Illuminate\\Routing' => array($vendorDir . '/illuminate/routing'),
+    'Illuminate\\Http' => array($vendorDir . '/illuminate/http'),
+    'Illuminate\\Events' => array($vendorDir . '/illuminate/events'),
+    'Illuminate\\Encryption' => array($vendorDir . '/illuminate/encryption'),
+    'Illuminate\\Database' => array($vendorDir . '/illuminate/database'),
+    'Illuminate\\Cookie' => array($vendorDir . '/illuminate/cookie'),
+    'Illuminate\\Container' => array($vendorDir . '/illuminate/container'),
+    'Illuminate\\Cache' => array($vendorDir . '/illuminate/cache'),
 );

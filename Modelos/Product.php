@@ -1,6 +1,6 @@
 <?php
  
-require_once("../configuraciones/config_database.php");
+require_once("configuraciones/config_database.php");
  
 class Product extends Illuminate\Database\Eloquent\Model {
  
@@ -12,7 +12,9 @@ protected $table = 'articulos';
 */
 }
  
-$producto = Product::find(1);
-$producto->descripcion = 'Nueva descripción del producto';
-$producto->save();
+// $producto = Product::find(1);
+// $producto->descripcion = 'Nueva descripción del producto';
+// $producto->save();
+
+// echo Product::get();
 

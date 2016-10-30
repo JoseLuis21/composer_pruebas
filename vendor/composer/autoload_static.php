@@ -7,9 +7,8 @@ namespace Composer\Autoload;
 class ComposerStaticInit36416a92fe2c5865525b095da64c2887
 {
     public static $files = array (
+        '3b5531f8bb4716e1b6014ad7e734f545' => __DIR__ . '/..' . '/illuminate/support/Illuminate/Support/helpers.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
-        '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -17,13 +16,11 @@ class ComposerStaticInit36416a92fe2c5865525b095da64c2887
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\Translation\\' => 30,
+            'Symfony\\Component\\EventDispatcher\\' => 34,
         ),
-        'I' => 
+        'P' => 
         array (
-            'Illuminate\\Support\\' => 19,
-            'Illuminate\\Database\\' => 20,
-            'Illuminate\\Contracts\\' => 21,
-            'Illuminate\\Container\\' => 21,
+            'Psr\\Log\\' => 8,
         ),
         'C' => 
         array (
@@ -40,21 +37,13 @@ class ComposerStaticInit36416a92fe2c5865525b095da64c2887
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
         ),
-        'Illuminate\\Support\\' => 
+        'Symfony\\Component\\EventDispatcher\\' => 
         array (
-            0 => __DIR__ . '/..' . '/illuminate/support',
+            0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
         ),
-        'Illuminate\\Database\\' => 
+        'Psr\\Log\\' => 
         array (
-            0 => __DIR__ . '/..' . '/illuminate/database',
-        ),
-        'Illuminate\\Contracts\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/illuminate/contracts',
-        ),
-        'Illuminate\\Container\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/illuminate/container',
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
         'Carbon\\' => 
         array (
@@ -63,13 +52,81 @@ class ComposerStaticInit36416a92fe2c5865525b095da64c2887
     );
 
     public static $prefixesPsr0 = array (
-        'D' => 
+        'S' => 
         array (
-            'Doctrine\\Common\\Inflector\\' => 
+            'Symfony\\Component\\Security\\Core\\' => 
             array (
-                0 => __DIR__ . '/..' . '/doctrine/inflector/lib',
+                0 => __DIR__ . '/..' . '/symfony/security-core',
+            ),
+            'Symfony\\Component\\Routing\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/symfony/routing',
+            ),
+            'Symfony\\Component\\HttpKernel\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/symfony/http-kernel',
+            ),
+            'Symfony\\Component\\HttpFoundation\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/symfony/http-foundation',
+            ),
+            'Symfony\\Component\\Finder\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/symfony/finder',
+            ),
+            'Symfony\\Component\\Debug\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/symfony/debug',
             ),
         ),
+        'I' => 
+        array (
+            'Illuminate\\Support' => 
+            array (
+                0 => __DIR__ . '/..' . '/illuminate/support',
+            ),
+            'Illuminate\\Session' => 
+            array (
+                0 => __DIR__ . '/..' . '/illuminate/session',
+            ),
+            'Illuminate\\Routing' => 
+            array (
+                0 => __DIR__ . '/..' . '/illuminate/routing',
+            ),
+            'Illuminate\\Http' => 
+            array (
+                0 => __DIR__ . '/..' . '/illuminate/http',
+            ),
+            'Illuminate\\Events' => 
+            array (
+                0 => __DIR__ . '/..' . '/illuminate/events',
+            ),
+            'Illuminate\\Encryption' => 
+            array (
+                0 => __DIR__ . '/..' . '/illuminate/encryption',
+            ),
+            'Illuminate\\Database' => 
+            array (
+                0 => __DIR__ . '/..' . '/illuminate/database',
+            ),
+            'Illuminate\\Cookie' => 
+            array (
+                0 => __DIR__ . '/..' . '/illuminate/cookie',
+            ),
+            'Illuminate\\Container' => 
+            array (
+                0 => __DIR__ . '/..' . '/illuminate/container',
+            ),
+            'Illuminate\\Cache' => 
+            array (
+                0 => __DIR__ . '/..' . '/illuminate/cache',
+            ),
+        ),
+    );
+
+    public static $classMap = array (
+        'SessionHandlerInterface' => __DIR__ . '/..' . '/symfony/http-foundation/Symfony/Component/HttpFoundation/Resources/stubs/SessionHandlerInterface.php',
+        'Symfony\\Component\\HttpFoundation\\Resources\\stubs\\FakeFile' => __DIR__ . '/..' . '/symfony/http-foundation/Symfony/Component/HttpFoundation/Resources/stubs/FakeFile.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -78,6 +135,7 @@ class ComposerStaticInit36416a92fe2c5865525b095da64c2887
             $loader->prefixLengthsPsr4 = ComposerStaticInit36416a92fe2c5865525b095da64c2887::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit36416a92fe2c5865525b095da64c2887::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit36416a92fe2c5865525b095da64c2887::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit36416a92fe2c5865525b095da64c2887::$classMap;
 
         }, null, ClassLoader::class);
     }
